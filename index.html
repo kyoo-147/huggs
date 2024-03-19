@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gửi em yêu, my cuttie </title>
+    <style>
+      .audio-button {
+          display: inline-block;
+          padding: 6px 14px;
+          background-color: #3498db;
+          color: #fff;
+          font-size: 14px;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px;
+          outline: none;
+          transition: background-color 0.3s ease;
+      }
+      .audio-button:hover {
+          background-color: #2980b9;
+      }
+  </style>
+  </head>
+  <body>
+    <img src="assets/3.gif" alt="date?" class="header-img" />
+
+  <audio id="myAudio" loop>
+    <source src="power.mp3" type="audio/mp3"/>
+</audio>
+
+<button class="audio-button" onclick="toggleAudio()">Play Music</button>
+
+<script>
+    var audio = document.getElementById("myAudio");
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            document.querySelector('.audio-button').textContent = "Pause Music";
+        } else {
+            audio.pause();
+            document.querySelector('.audio-button').textContent = "Play Music";
+        }
+    }
+</script>
+
+
+    <div class="container" id="container">
+      <img src="assets/1.gif" alt="please" class="image-1" style="width: 825px; height: 441px;" />
+      <img src="assets/2.gif" alt="yes" class="image-2 hide" style="width: 750px; height: 550px;" />
+      <button id="yes1" class="btn btn-yes">Vâng anh yêu!!!!</button>
+      <button id="no1"  class="btn btn-no">Không</button>
+    </div>
+    <script src="main.js"></script>
+    <script>document.getElementById('yes1').addEventListener('click', function() {
+      alert('HUGSSS !!! Về Việt anh dẫn bé đi ăn kem nà!!!❤️');
+      });
+      </script>
+  </body>
+</html>
